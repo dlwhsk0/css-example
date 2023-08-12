@@ -1,7 +1,23 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-weight: 300;
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
 .back {
   width: 100vw;
   height: 100vh;
+  min-width: 550px;
+  min-height: 550px;
   background-color: #40503c;
+  /* background-color: #779471; */
   display: flex;
   justify-content: center;
   align-items: center;
@@ -18,60 +34,97 @@
 
 .header {
   width: 100%;
-  height: 70px;
+  height: 65px;
   background-color: rgb(32, 41, 30);
+  /* background-color: rgb(54, 86, 47); */
   border-radius: 15px 15px 0 0;
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 0 10px;
 }
-
 .mdBright {
   color: white;
   width: 25px;
   height: 25px;
   margin-left: 10px;
 }
-
 .header span {
   color: #eaab2c;
+  /* color: #ffbd38; */
   font-size: large;
-  margin: 0 10px;
+  font-weight: 500;
+  padding: 7px;
+  box-sizing: border-box;
 }
 
 .container {
   width: 100%;
-  height: 380px;
+  height: 390px;
   background-color: rgb(37, 54, 36);
+  /* background-color: rgb(70, 113, 67); */
   border-radius: 0 0 15px 15px;
   box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.3) inset;
+}
+
+.todoBox {
+  width: 100%;
+  height: 325px;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.todo {
+  margin-bottom: 8px;
+  font-size: 18px;
+  color: white;
+  display: flex;
+}
+.todo > input {
+  /* 체크박스 크기 키우기 */
+  zoom: 1.5;
+  margin-right: 5px;
+}
+.todo > span {
+  width: 345px;
+  margin-right: 14px;
+  font-weight: 400;
+}
+
+.delete {
+  height: 25px;
+  width: 25px;
+  border-radius: 100%;
+}
+.delete:hover {
+  background-color: rgba(255, 255, 255, 0.205);
 }
 
 .inputBox {
   width: 100%;
   height: 65px;
   background-color: rgb(30, 44, 29);
+  /* background-color: rgb(54, 86, 47); */
   border-radius: 0 0 15px 15px;
   box-shadow: 0px 0px 2px 0px rgba(0, 0, 0, 0.3) inset;
   position: relative;
-  top: 315px;
   text-align: center;
 }
-
-.input {
+.inputBox > input {
   width: 350px;
   height: 40px;
   border-radius: 8px 0 0 8px;
   position: relative;
   top: 12px;
 }
-
-.inputButton {
+.inputBox > button {
   width: 70px;
   height: 40px;
+  font-weight: 500;
+
   background-color: #eaab2c;
-  color: white;
+  /* background-color: #ffbd38; */
+  color: rgb(30, 44, 29);
   border-radius: 0 8px 8px 0;
   position: relative;
   top: 12px;
