@@ -50,7 +50,7 @@ export default function AppBox() {
               type="text"
               name="todo"
               value={inputs.content}
-              placeholder="  Add a To-do"
+              placeholder="Add a To-do"
               onChange={handleChange}
             />
             <button onClick={handleAdd}>Add</button>
