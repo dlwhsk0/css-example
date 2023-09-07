@@ -1,10 +1,12 @@
 import "./App.css";
-import AppBox from "./AppBox";
+// import AppBox from "./AppBox";
+import TodoList from "./components/TodoList/TodoList";
 
 function App() {
   return (
     <>
-      <AppBox />
+      {/* <AppBox /> */}
+      <TodoList />
     </>
   );
 }
